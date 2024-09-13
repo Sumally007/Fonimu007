@@ -9,60 +9,65 @@
   <body>
     <div>
       <!--content wraper-->
-      <div>
-        <nav>
-          <div>
-            <img src="" alt="logo" />
-            <h1></h1>
+
+      <header class="grid grid-cols-12 grid-rows-4 text-white">
+        <div class="-z-10 col-start-1 col-end-13 row-start-1 row-end-4">
+          <img class="w-full h-full object-cover" src="/img/Path.png" alt="" />
+        </div>
+
+        <nav
+          class="grid col-start-1 col-end-13 row-start-1 row-end-1 self-start text-white"
+        >
+          <div class="grid grid-cols-2 p-8">
+            <div class="flex items-center">
+              <img class="h-5" src="/img/Group 1.png" alt="logo" />
+              <h1 class="ml-2 text-2xl">Fonimu</h1>
+            </div>
+            <ul class="flex justify-between text-white text-xl">
+              <li>
+                <a href="#">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Use Cases</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>Demo</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Datasets</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Contact Us</span></a>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <a href="#">
-                <span></span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span></span></a>
-            </li>
-            <li>
-              <a href="#"><span></span></a>
-            </li>
-            <li>
-              <a href="#"><span></span></a>
-            </li>
-          </ul>
         </nav>
-      </div>
+        <div
+          class="grid col-start-2 col-end-12 row-start-2 row-end-2 place-self-center text-center -mt-32"
+        >
+          <h1 class="text-6xl font-bold">Building a Swahili NLP hub</h1>
+          <p class="mt-8 w-4/6 place-self-center text-xl">
+            A Swahili NLP hub for everyone - That is developers, data scientists
+            and everyone with no-coding experience.
+          </p>
+          <a
+            href="#"
+            class="w-max text-sm bg-green-300 py-3 px-10 mt-8 rounded-full place-self-center"
+            ><span class="font-bold">Use Cases</span> - Get Started</a
+          >
+        </div>
+        <div class="col-start-2 col-end-12 row-start-3 row-end-5">
+          <img src="/img/screen1 1.png" alt="" />
+        </div>
+      </header>
+
       <!--nav end-->
 
-      <main>
-        <header>
-          <div class="lg:grid lg:grid-cols-12 lg:grid-rows-3">
-            <img
-              class="lg:col-span-12 lg:row-span-2 absolute -z-10"
-              src="/img/Path.png"
-              alt=""
-            />
-            <div class="lg:flex lg:flex-col lg:items-center lg:col-span-12">
-              <h1 class="text-6xl font-bold">Building a Swahili NLP hub</h1>
-              <p class="mt-8 w-3/6 text-center">
-                A Swahili NLP hub for everyone - That is developers, data
-                scientists and everyone with no-coding experience.
-              </p>
-              <a
-                href="#"
-                class="text-sm bg-green-300 py-3 px-10 mt-8 rounded-full"
-                ><span class="font-bold">Use Cases</span> - Get Started</a
-              >
-            </div>
-            <div
-              class="lg:col-start-2 lg:col-end-12 lg:row-start-2 lg:row-end-12"
-            >
-              <img src="/img/screen1 1.png" alt="" />
-            </div>
-          </div>
-        </header>
-      </main>
+      <main></main>
     </div>
   </body>
 </html>
