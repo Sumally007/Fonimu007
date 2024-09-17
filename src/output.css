@@ -607,8 +607,16 @@ video {
   margin-right: 2rem;
 }
 
+.-ml-44 {
+  margin-left: -11rem;
+}
+
 .-mt-32 {
   margin-top: -8rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-2 {
@@ -617,6 +625,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-6 {
@@ -639,6 +651,10 @@ video {
   margin-right: 1rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -647,20 +663,8 @@ video {
   margin-top: 2rem;
 }
 
-.-ml-44 {
-  margin-left: -11rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mr-8 {
-  margin-right: 2rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .inline-block {
@@ -729,8 +733,16 @@ video {
   width: max-content;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-24 {
+  width: 6rem;
+}
+
+.basis-2\/5 {
+  flex-basis: 40%;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
 }
 
 .grid-cols-12 {
@@ -747,6 +759,10 @@ video {
 
 .grid-rows-4 {
   grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-start {
@@ -777,8 +793,16 @@ video {
   gap: 1rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .place-self-center {
@@ -813,14 +837,18 @@ video {
   border-width: 1px;
 }
 
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-gray-300 {
@@ -838,19 +866,23 @@ video {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -859,10 +891,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-10 {
@@ -910,6 +938,21 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -920,6 +963,10 @@ video {
 
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pr-4 {
@@ -934,8 +981,12 @@ video {
   padding-top: 5rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -950,6 +1001,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl {
@@ -982,17 +1038,17 @@ video {
   line-height: 1rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-green-500 {
@@ -1015,11 +1071,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1034,17 +1085,21 @@ video {
     margin-right: 0px;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:w-max {
     width: -moz-max-content;
     width: max-content;
   }
 
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
   }
 
   .sm\:rounded {
