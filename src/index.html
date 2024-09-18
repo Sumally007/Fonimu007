@@ -10,20 +10,42 @@
     <div>
       <!--content wraper-->
       <!--header start-->
-      <header class="grid grid-cols-12 grid-rows-4 text-white">
-        <div class="-z-10 col-start-1 col-end-13 row-start-1 row-end-4">
+      <header
+        class="md:grid md:grid-cols-12 md:grid-rows-4 text-white sm:grid-rows-3"
+      >
+        <div
+          class="-z-10 md:col-start-1 md:col-end-13 md:row-start-1 md:row-end-4 sm:row-end-3"
+        >
           <img class="w-full h-full object-cover" src="/img/Path.png" alt="" />
         </div>
         <!--nav start-->
         <nav
-          class="grid col-start-1 col-end-13 row-start-1 row-end-1 self-start text-white"
+          class="md:grid col-start-1 md:col-end-13 md:row-start-1 md:row-end-1 self-start text-white"
         >
-          <div class="grid grid-cols-2 p-8">
-            <div class="flex items-center">
+          <div class="md:grid md:grid-cols-2 p-8 sm:grid-cols-1">
+            <div class="flex items-center w-full">
               <img class="h-5" src="/img/Group 1.png" alt="logo" />
               <h1 class="ml-2 text-2xl">Fonimu</h1>
+              <div class="ml-auto cursor-pointer md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
             </div>
-            <ul class="flex justify-between text-white text-xl">
+            <ul
+              class="md:flex justify-between text-white text-xl hidden md:block"
+            >
               <li>
                 <a href="#">
                   <span>Home</span>
@@ -61,7 +83,9 @@
             ><span class="font-bold">Use Cases</span> - Get Started</a
           >
         </div>
-        <div class="col-start-2 col-end-12 row-start-3 row-end-5">
+        <div
+          class="col-start-2 col-end-12 row-start-3 row-end-5 sm:hidden md:block"
+        >
           <img class="w-full object-cover" src="/img/screen1 1.png" alt="" />
         </div>
       </header>
@@ -71,11 +95,11 @@
       <main class="pt-5">
         <!--section one start-->
         <section class="mx-8">
-          <div class="grid grid-cols-2 gap-10">
+          <div class="md:grid md:grid-cols-2 md:gap-10 sm:grid-cols-1">
             <div class="self-center">
               <img class="w-full" src="/img/Capture1.PNG" alt="" />
             </div>
-            <div>
+            <div class="sm:mt-10">
               <h2 class="text-base uppercase text-green-800 mb-2">About us</h2>
               <h3 class="text-xl font-bold mb-2">
                 Let us share with you a little bit of history.
@@ -562,7 +586,9 @@
         </section>
         <!--section six end-->
         <!--section footer start-->
-        <footer class="flex justify-between mx-8 py-5 border-t border-gray-300">
+        <footer
+          class="md:flex md:justify-between mx-8 py-5 border-t border-gray-300 sm:flex-row"
+        >
           <div class="flex flex-col gap-4">
             <div class="flex items-center">
               <img class="h-5" src="/img/g52.png" alt="logo" />
