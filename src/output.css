@@ -769,10 +769,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-20 {
   gap: 5rem;
 }
@@ -1072,16 +1068,8 @@ video {
     flex-direction: row;
   }
 
-  .sm\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .sm\:gap-y-10 {
-    row-gap: 2.5rem;
-  }
-
-  .sm\:gap-y-0 {
-    row-gap: 0px;
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
   .sm\:rounded {
@@ -1144,5 +1132,11 @@ video {
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
