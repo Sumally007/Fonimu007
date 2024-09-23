@@ -11,7 +11,7 @@
       <!--content wraper-->
       <!--header start-->
       <header
-        class="text-white bg-cover md:h-headerh sm:h-headerh sm:pb-20 rounded-b-lg"
+        class="text-white bg-centers rounded-3xl h-headerh sm:pb-20"
         style="background-image: url(./img/Path.png)"
       >
         <!--nav start-->
@@ -102,7 +102,7 @@
               <h3 class="text-lg font-semibold mb-2">
                 Let us share with you a little bit of history.
               </h3>
-              <p class="text-base mb-4">
+              <p class="text-base text-gray-500 mb-4">
                 Fonimu was founded by a group of enthusiasts who believe NLP can
                 revolutionize access to services in Africa. This has been the
                 core of our drive. Today, we are a community solving the
@@ -127,7 +127,7 @@
         <!--section one end-->
         <!--section two start-->
         <section class="mx-8 py-32">
-          <div class="text-center w-3/5 mx-auto">
+          <div class="text-center lg:w-3/4 mx-auto">
             <h1 class="text-2xl font-bold mb-4">Problems we are solving</h1>
             <p class="mb-6 text-xl">
               The Swahili NLP problems we work on are hard, and we want as many
@@ -601,23 +601,24 @@
                 />
               </div>
             </div>
-            <div class="flex items-center md:flex-wrap">
-              <div class="mr-8 sm:mr-0 sm:w-max">
-                <input type="checkbox" />
+            <div
+              class="flex md:items-center sm:flex-col md:flex-row sm:items-start"
+            >
+              <div class="flex items-center">
+                <div class="mr-8 sm:mr-0 sm:w-max">
+                  <input type="checkbox" />
+                </div>
+                <div class="">
+                  <p class="text-base">
+                    I agree to receive communications from Fonimu
+                  </p>
+                </div>
               </div>
-              <div class="">
-                <p class="text-base">
-                  I agree to receive communications from Fonimu
-                </p>
-              </div>
-
-              <div class="sm:block">
-                <a
-                  class="inline-block text-base text-white p-2 rounded bg-green-700"
-                  href="#"
-                  >Send Message</a
-                >
-              </div>
+              <a
+                class="mt-2 inline-block text-base text-white p-2 rounded-full bg-[#2E6D64] sm:w-full md:w-max text-center"
+                href="#"
+                >Send Message</a
+              >
             </div>
           </div>
         </section>
