@@ -37,11 +37,11 @@
         <div class="hidden md:block text-black">
           <ul class="flex text-base font-light">
             <li class="mr-8 text-base">
-              <a class="text-base" href="#">
+              <a class="text-base" href="./index.html">
                 <span>Home</span>
               </a>
             </li>
-            <li class="mr-8">
+            <li class="mr-8 font-semibold">
               <a href="./usecases.html">
                 <span>Use Cases</span>
               </a>
@@ -49,8 +49,8 @@
             <li class="mr-8">
               <a href="#"><span>Demo</span></a>
             </li>
-            <li class="mr-8 font-semibold">
-              <a href="#"><span>Datasets</span></a>
+            <li class="mr-8">
+              <a href="./datasets.html"><span>Datasets</span></a>
             </li>
             <li>
               <a href="#"><span>Contact Us</span></a>
@@ -59,242 +59,122 @@
         </div>
       </div>
     </nav>
-    <!--nav end-->
-    <!--first div start-->
-    <div class="mt-6 mb-6 mx-10 md:mx-20">
-      <div class="flex justify-between">
-        <form class="flex items-center bg-gray-300" action="#">
-          <input
-            class="bg-gray-300 w-40 sm:w-80 outline-none"
-            type="search"
-            id="search"
-          />
-          <button class="p-2 bg-gray-400">
-            <svg
-              class="h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
-          </button>
-        </form>
-
-        <div class="flex items-center">
-          <span class="text-sm text-green-800 mr-3">Share</span>
-          <svg
-            class="text-green-800 h-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
-            />
-          </svg>
+    <!---nav end-->
+    <main class="mx-20 mt-5 mb-10 flex gap-10">
+      <div class="flex flex-col border border-gray-200 p-5 w-max h-max rounded-lg">
+        <h1 class="text-lg font-semibold  uppercase">About Dataset</h1>
+        <a class="inline-block" href="">context</a>
+        <a class="inline-block" href="">content</a>
+        <a class="inline-block" href="">inspiration</a>
+        <a class="inline-block" href="">downloads</a>
+        <a class="inline-block" href="">preview</a>
+        <a class="inline-block" href="">license</a>
+        <a class="inline-block" href="">contribution</a>
+      </div>
+      <div>
+        <div>
+          <h1 class="text-2xl font-bold">Swahili-tweet-sentiment</h1>
+          <div class="flex items-center pb-4 pt-4 border-b border-gray-200">
+            <div class="flex items-center">
+                <img class="w-5 h-5 rounded-full" src="" alt="" />
+                <p class="flex text-xs">
+                  <span class="text-yellow-700 ml-2">by:</span>
+                  <span class="text-[#2E6D64] ml-1 pr-4 border-r-2 border-gray-400">Kelvin Shirima</span>
+                </p>
+            </div>
+              <div>
+                <p class="flex text-xs">
+                  <span  class="text-yellow-700 pl-4">Last updated:</span>
+                  <span class="text-[#2E6D64] ml-1">March 10, 2020</span>
+                </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="mt-4">
+          <h1 class="text-lg font-semibold  italic ">Context</h1>
+          <p class="text-base text-gray-500">A new Swahili tweet dataset for sentiment analysis.</p>
+        </div>
+        <div class="mt-14">
+          <h1 class="text-lg font-semibold  italic">Content</h1>
+          <p class="text-base text-gray-500">The dataset has 1 CSV file with 2 columns The columns are;</p>
+          <ol>
+            <li>The tweet text</li>
+            <li>The sentiment of the tweet</li>
+          </ol>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold  italic mt-14">Inspiration</h1>
+          <ul>
+            <li>Can we predict sentiment of tweets based on this data?</li>
+            <li>Can we perform language modeling for Swahili?</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold  italic mt-14">Download</h1>
+          <p class="text-base text-gray-500">Using datasets library</p>
+          <div class="p-3 bg-gray-50 rounded-lg text-[#2E6D64]">
+            <p>from datasetsimport load_dataset</p>
+            <p>dataset = load_dataset("Davis/Swahili-tweet-sentiment")</p>
+          </div>
+          <p class="text-base text-gray-500">Or just clone repo</p>
+          <div class="p-3 bg-gray-50 rounded-lg text-[#2E6D64]"">
+            <p>git lfs install</p>
+            <p>
+              git clone
+              https://huggingface.co/datasets/Davis/Swahili-tweet-sentiment
+            </p>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold  italic mt-14">Dataset Preview</h1>
+          <div>
+            <table class="bg-gray-50 rounded-lg">
+              <th>
+                <tr class="border-b border-b-gray-200">
+                  <th class="text-start p-4">Tweets (string)</th>
+                  <th class="bg-gray-50 border-b border-b-gray-200 text-center">Labels (int)</th>
+                </tr>
+              </th>
+              <tbody>
+                <tr class="border-b border-b-gray-200">
+                  <td class="p-4">
+                    So chuga si tunakutana kesho kwenye Nyamachoma festival
+                    nanenane mnajif anyaga mnakula mtungi mje kesho niwakalishe
+                  </td>
+                  <td class="text-center bg-gray-200 border-b border-b-gray-200">0</td>
+                </tr>
+                <tr class="border-b border-b-gray-200">
+                  <td  class="p-4">
+                    Asante sana watu wa Sirari jimbo la Tarime vijijini Huu ni
+                    Upendo usio na Mashaka kwa wote wanaojaribu kufanya kazi kwa
+                    bidii
+                  </td>
+                  <td class="text-center bg-gray-200 border-b border-b-gray-200">1</td>
+                </tr>
+                <tr class="border-b border-b-gray-200">
+                  <td  class="p-4">
+                    Leo nimepata kitambulisho changu cha taifa Asante sana
+                  </td>
+                  <td class="text-center bg-gray-200">0</td>
+                </tr>
+                <tr class=" ">
+                  <td  class="p-4">Mgema akisifiwa tembo hulitia maji</td>
+                  <td class="text-center bg-gray-200 border-b border-b-gray-200">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold  italic mt-14">Licensing Information</h1>
+          <p class="text-base text-gray-500">More Information Needed</p>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold  italic mt-14">Contributions</h1>
+          <p class="text-base text-gray-500">Davis David, Zephania Reuben & Eliya Masesa</p>
         </div>
       </div>
-      <div class="mt-14 hidden sm:block">
-        <img class="rounded-lg" src="./img/Capture.PNG" alt="" />
-      </div>
-      <div
-        class="flex flex-wrap gap-2 mt-12 pb-6 px-3 border-b border-gray-200"
-      >
-        <a
-          class="bg-[#571217] text-white rounded-full text-sm px-4 py-2"
-          href=""
-          >All Datasets</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Computer Science</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Education</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Computer Vision</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Natural Language Processing</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Healthcare</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Finance</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Image to Image</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Summarization</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Pre-Trained</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Translation</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Image Classification</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Text Classification</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Object</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Audio</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Education</a
-        >
-        <a
-          class="bg-gray-100 text-[#571217] rounded-full text-sm px-4 py-2"
-          href=""
-          >Computer Vision</a
-        >
-      </div>
-    </div>
-
-    <!--first div end-->
-    <!--second div start-->
-    <div
-      class="grid grid-cols-1 lg:grid-cols-2 w-max gap-4 mx-10 md:mx-20 mb-20"
-    >
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 rounded-lg py-4 px-4 bg-gray-100">
-        <div>
-          <img src="./img/datasetIcon.a0e5b395.svg" alt="" />
-        </div>
-        <div>
-          <p class="text-sm font-semibold text-[#571217]">
-            hf-internal-testing/fixtures_image_utils
-          </p>
-          <p class="text-gray-400 text-xs">March 10, 2020</p>
-        </div>
-      </div>
-    </div>
-    <!--second div end-->
+    </main>
   </body>
 </html>
