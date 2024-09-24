@@ -562,9 +562,14 @@ video {
   position: relative;
 }
 
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mx-8 {
@@ -577,17 +582,16 @@ video {
   margin-right: auto;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-4 {
@@ -658,10 +662,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -707,12 +707,12 @@ video {
   width: 6rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-40 {
+  width: 10rem;
 }
 
-.w-80 {
-  width: 20rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-full {
@@ -724,20 +724,12 @@ video {
   width: max-content;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1038,6 +1030,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1063,11 +1060,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
@@ -1086,12 +1078,21 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .sm\:mr-0 {
     margin-right: 0px;
   }
 
   .sm\:block {
     display: block;
+  }
+
+  .sm\:w-80 {
+    width: 20rem;
   }
 
   .sm\:w-9\/12 {
@@ -1105,10 +1106,6 @@ video {
   .sm\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .sm\:w-80 {
-    width: 20rem;
   }
 
   .sm\:grid-cols-1 {
@@ -1125,6 +1122,11 @@ video {
 
   .sm\:rounded {
     border-radius: 0.25rem;
+  }
+
+  .sm\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .sm\:pb-20 {
@@ -1206,11 +1208,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }
