@@ -60,65 +60,75 @@
       </div>
     </nav>
     <!---nav end-->
-    <main class="mx-20 mt-5 mb-10 flex gap-10">
-      <div class="flex flex-col border border-gray-200 p-5 w-max h-max rounded-lg">
-        <h1 class="text-lg font-semibold  uppercase">About Dataset</h1>
-        <a class="inline-block" href="">context</a>
-        <a class="inline-block" href="">content</a>
-        <a class="inline-block" href="">inspiration</a>
-        <a class="inline-block" href="">downloads</a>
-        <a class="inline-block" href="">preview</a>
-        <a class="inline-block" href="">license</a>
-        <a class="inline-block" href="">contribution</a>
+    <main class="mx-8 md:mx-20 mt-5 mb-10 flex flex-col md:flex-row gap-10">
+      <div
+        class="flex flex-col border border-gray-200 p-5 md:w-max h-max rounded-lg"
+      >
+        <h1 class="text-lg font-semibold uppercase">About Dataset</h1>
+        <a class="block p-3" href="">Context</a>
+        <a class="block p-3" href="">Content</a>
+        <a class="block p-3 text-orange-400 bg-orange-200 rounded-lg" href=""
+          >Inspiration</a
+        >
+        <a class="block p-3" href="">Downloads</a>
+        <a class="block p-3" href="">Preview</a>
+        <a class="block p-3" href="">License</a>
+        <a class="block p-3" href="">Contribution</a>
       </div>
       <div>
         <div>
           <h1 class="text-2xl font-bold">Swahili-tweet-sentiment</h1>
           <div class="flex items-center pb-4 pt-4 border-b border-gray-200">
             <div class="flex items-center">
-                <img class="w-5 h-5 rounded-full" src="" alt="" />
-                <p class="flex text-xs">
-                  <span class="text-yellow-700 ml-2">by:</span>
-                  <span class="text-[#2E6D64] ml-1 pr-4 border-r-2 border-gray-400">Kelvin Shirima</span>
-                </p>
+              <img class="w-5 h-5 rounded-full" src="" alt="" />
+              <p class="flex text-xs">
+                <span class="text-orange-400 ml-2">by:</span>
+                <span
+                  class="text-[#2E6D64] ml-1 pr-4 border-r-2 border-gray-400"
+                  >Kelvin Shirima</span
+                >
+              </p>
             </div>
-              <div>
-                <p class="flex text-xs">
-                  <span  class="text-yellow-700 pl-4">Last updated:</span>
-                  <span class="text-[#2E6D64] ml-1">March 10, 2020</span>
-                </p>
+            <div>
+              <p class="flex text-xs">
+                <span class="text-orange-400 pl-4">Last updated:</span>
+                <span class="text-[#2E6D64] ml-1">March 10, 2020</span>
+              </p>
             </div>
           </div>
-          
         </div>
         <div class="mt-4">
-          <h1 class="text-lg font-semibold  italic ">Context</h1>
-          <p class="text-base text-gray-500">A new Swahili tweet dataset for sentiment analysis.</p>
+          <h1 class="text-lg font-semibold italic">Context</h1>
+          <p class="text-base text-gray-500">
+            A new Swahili tweet dataset for sentiment analysis.
+          </p>
         </div>
         <div class="mt-14">
-          <h1 class="text-lg font-semibold  italic">Content</h1>
-          <p class="text-base text-gray-500">The dataset has 1 CSV file with 2 columns The columns are;</p>
-          <ol>
+          <h1 class="text-lg font-semibold italic">Content</h1>
+          <p class="text-base text-gray-500">
+            The dataset has 1 CSV file with 2 columns The columns are;
+          </p>
+          <ol class="list-decimal ml-4">
             <li>The tweet text</li>
             <li>The sentiment of the tweet</li>
           </ol>
         </div>
         <div>
-          <h1 class="text-lg font-semibold  italic mt-14">Inspiration</h1>
-          <ul>
+          <h1 class="text-lg font-semibold italic mt-14">Inspiration</h1>
+          <ul class="list-disc ml-4">
             <li>Can we predict sentiment of tweets based on this data?</li>
             <li>Can we perform language modeling for Swahili?</li>
           </ul>
         </div>
         <div>
-          <h1 class="text-lg font-semibold  italic mt-14">Download</h1>
-          <p class="text-base text-gray-500">Using datasets library</p>
-          <div class="p-3 bg-gray-50 rounded-lg text-[#2E6D64]">
+          <h1 class="text-lg font-semibold italic mt-14">Download</h1>
+          <p class="text-base text-gray-500 mb-2">Using datasets library</p>
+          <div class="p-3 bg-gray-50 rounded-lg text-[#2E6D64] mb-4">
             <p>from datasetsimport load_dataset</p>
             <p>dataset = load_dataset("Davis/Swahili-tweet-sentiment")</p>
           </div>
-          <p class="text-base text-gray-500">Or just clone repo</p>
-          <div class="p-3 bg-gray-50 rounded-lg text-[#2E6D64]"">
+          <p class="text-base text-gray-500 mb-2">Or just clone repo</p>
+          <div class="p-3 bg-gray-50 rounded-lg text-[#2E6D64]">
             <p>git lfs install</p>
             <p>
               git clone
@@ -127,13 +137,19 @@
           </div>
         </div>
         <div>
-          <h1 class="text-lg font-semibold  italic mt-14">Dataset Preview</h1>
+          <h1 class="text-lg font-semibold italic mt-14 mb-2">
+            Dataset Preview
+          </h1>
           <div>
-            <table class="bg-gray-50 rounded-lg">
+            <table class="bg-gray-50 rounded-lg overflow-hidden">
               <th>
                 <tr class="border-b border-b-gray-200">
                   <th class="text-start p-4">Tweets (string)</th>
-                  <th class="bg-gray-50 border-b border-b-gray-200 text-center">Labels (int)</th>
+                  <th
+                    class="bg-gray-100 border-b border-b-gray-200 text-center px-6"
+                  >
+                    Labels (int)
+                  </th>
                 </tr>
               </th>
               <tbody>
@@ -142,37 +158,53 @@
                     So chuga si tunakutana kesho kwenye Nyamachoma festival
                     nanenane mnajif anyaga mnakula mtungi mje kesho niwakalishe
                   </td>
-                  <td class="text-center bg-gray-200 border-b border-b-gray-200">0</td>
+                  <td
+                    class="text-center bg-gray-100 border-b border-b-gray-200"
+                  >
+                    0
+                  </td>
                 </tr>
                 <tr class="border-b border-b-gray-200">
-                  <td  class="p-4">
+                  <td class="p-4">
                     Asante sana watu wa Sirari jimbo la Tarime vijijini Huu ni
                     Upendo usio na Mashaka kwa wote wanaojaribu kufanya kazi kwa
                     bidii
                   </td>
-                  <td class="text-center bg-gray-200 border-b border-b-gray-200">1</td>
+                  <td
+                    class="text-center bg-gray-100 border-b border-b-gray-200"
+                  >
+                    1
+                  </td>
                 </tr>
                 <tr class="border-b border-b-gray-200">
-                  <td  class="p-4">
+                  <td class="p-4">
                     Leo nimepata kitambulisho changu cha taifa Asante sana
                   </td>
-                  <td class="text-center bg-gray-200">0</td>
+                  <td class="text-center bg-gray-100">0</td>
                 </tr>
                 <tr class=" ">
-                  <td  class="p-4">Mgema akisifiwa tembo hulitia maji</td>
-                  <td class="text-center bg-gray-200 border-b border-b-gray-200">1</td>
+                  <td class="p-4">Mgema akisifiwa tembo hulitia maji</td>
+                  <td
+                    class="text-center bg-gray-100 border-b border-b-gray-200"
+                  >
+                    1
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
         <div>
-          <h1 class="text-lg font-semibold  italic mt-14">Licensing Information</h1>
+          <h1 class="text-lg font-semibold italic mt-14">
+            Licensing Information
+          </h1>
           <p class="text-base text-gray-500">More Information Needed</p>
         </div>
         <div>
-          <h1 class="text-lg font-semibold  italic mt-14">Contributions</h1>
-          <p class="text-base text-gray-500">Davis David, Zephania Reuben & Eliya Masesa</p>
+          <h1 class="text-lg font-semibold italic mt-14">Contributions</h1>
+          <p class="text-base text-gray-500">
+            Davis David, Zephania Reuben & Eliya Masesa
+          </p>
         </div>
       </div>
     </main>
